@@ -17,7 +17,7 @@ variable "region" {
 
 variable "resource_group" {
   type        = string
-  default     = "default"
+  default     = "itz-americas-americas_top-rg"
   description = "The resource group to deploy the resources to."
 }
 
