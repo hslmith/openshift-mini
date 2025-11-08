@@ -46,7 +46,7 @@ variable "workers_per_zone" {
 
 variable "public_service_endpoint_disabled" {
   type        = bool
-  default     = false
+  default     = true
   description = "Whether or not to disable the public endpoint for the cluster."
 }
 
