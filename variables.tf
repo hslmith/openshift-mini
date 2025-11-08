@@ -44,7 +44,7 @@ variable "workers_per_zone" {
   description = "The number of workers to have in each zone of the cluster. Suggested minimum is 2."
 }
 
-variable "disable_public_outbound_traffic" {
+variable "disable_public_traffic_protection" {
   type        = bool
   default     = true
   description = "option to allow public outbound access from the cluster workers."
