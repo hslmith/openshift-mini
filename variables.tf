@@ -5,7 +5,7 @@
 # Global variables
 variable "name" {
   type        = string
-  default     = "openshift-vpc"
+  default     = "hs-ocp-vpc"
   description = "The name used for creating the VPC, cluster, and other resources. The name will be appended by a random 4 digit string."
 }
 
@@ -44,9 +44,16 @@ variable "workers_per_zone" {
   description = "The number of workers to have in each zone of the cluster. Suggested minimum is 2."
 }
 
-variable "public_service_endpoint_disabled" {
+variable "disable_public_outbound_traffic" {
   type        = bool
   default     = true
+  description = "option to allow public outbound access from the cluster workers."
+}
+
+
+variable "public_service_endpoint_disabled" {
+  type        = bool
+  default     = false
   description = "Whether or not to disable the public endpoint for the cluster."
 }
 
